@@ -100,11 +100,14 @@ Proyecto de DAW
     - id_usuario (FK)
       
 ### Relación
-> Relación: Usuario 1 <-> N Imagen
+> Relación:
+- Usuario 1 <-> N Imagen
 
-> Relación: Usuario 1 <-> N Tablero
+> Relación:
+- Usuario 1 <-> N Tablero
 
-> Relación: Imagen M <-> N Tablero
+> Relación:
+- Imagen M <-> N Tablero
   - Atributos principales:
     - id_tablero (FK)
     - id_imagen (FK)
