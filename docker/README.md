@@ -1,5 +1,5 @@
-# Gestor base de datos TFG
-http://localhost:8081
-
-# Página TFG
-http://localhost:8080/pinned/public/index.php
+# Contenedor del Proyecto
+# Página web
+> http://localhost:8080/pinned/public/index.php
+## Gestor de la base de datos
+> http://localhost:8081
