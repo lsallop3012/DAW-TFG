@@ -1,3 +1,5 @@
+name: pinned
+
 services:
   web:
     build: .
