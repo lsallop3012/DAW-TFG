@@ -4,10 +4,10 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Comentario extends Model
-{
+class Carpeta extends Model
+{ 
     /**
-     * Atributos de la tabla Comentario.
+     * Atributos de la tabla Carpeta.
      *
      * @var list<string>
      */
@@ -24,6 +24,6 @@ class Comentario extends Model
 
     public function imagen()
     {
-        return $this->belongsTo(Imagen::class, 'imagen_id');
+        return $this->hasMany(Imagen::class, 'imagen_id');
     }
 }

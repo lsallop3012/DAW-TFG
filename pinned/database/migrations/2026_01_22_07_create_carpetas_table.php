@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         // Creación de la tabla que relaciona las tablas tableros e imágenes
-        Schema::create('tableros_imagenes', function (Blueprint $table) {
+        Schema::create('carpetas', function (Blueprint $table) {
             $table->id();
             $table->foreignId('tablero_id')->constrained('tableros');
             $table->foreignId('imagen_id')->constrained('imagenes');
@@ -25,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('tableros_imagenes');
+        Schema::dropIfExists('carpetas');
     }
 };

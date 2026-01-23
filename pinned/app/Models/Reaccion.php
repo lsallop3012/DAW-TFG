@@ -16,4 +16,14 @@ class Reaccion extends Model
         'user_id',
         'imagen_id',    
     ];
+
+    public function usuario()
+    {
+        return $this->belongsTo(User::class, 'user_id');
+    }
+
+    public function imagen()
+    {
+        return $this->belongsTo(Imagen::class, 'imagen_id');
+    }
 }

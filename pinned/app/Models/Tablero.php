@@ -17,4 +17,14 @@ class Tablero extends Model
         'fecha_creacion',
         'user_id',
     ];
+
+    public function usuario()
+    {
+        return $this->belongsTo(User::class, 'user_id');
+    }
+
+    public function imagenes()
+    {
+        return $this->hasMany(Imagen::class, 'tablero_id');
+    }
 }
