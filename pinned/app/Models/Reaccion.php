@@ -14,5 +14,6 @@ class Reaccion extends Model
     protected $fillable = [
         'contenido',
         'user_id',
-        'imagen_id',    ];
+        'imagen_id',    
+    ];
 }
