@@ -13,13 +13,13 @@ class Carpeta extends Model
      */
     protected $fillable = [
         'contenido',
-        'user_id',
+        'tablero_id',
         'imagen_id',
     ];
 
     public function usuario()
     {
-        return $this->belongsTo(User::class, 'user_id');
+        return $this->belongsTo(User::class, 'tablero_id');
     }
 
     public function imagen()
