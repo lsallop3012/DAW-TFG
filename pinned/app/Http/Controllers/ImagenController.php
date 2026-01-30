@@ -2,10 +2,18 @@
 
 namespace App\Http\Controllers;
 use App\Models\Imagen;
+use App\Services\ImagenService;
 use Illuminate\Http\Request;
 
 class ImagenController extends Controller
 {
+    protected $imagenService;
+
+    public function __construct(ImagenService $imagenService)
+    {
+        $this->imagenService = $imagenService;
+    }
+
     /**
      * Display a listing of the resource.
      */
@@ -17,6 +25,9 @@ class ImagenController extends Controller
     /**
      * Show the form for creating a new resource.
      */
+
+    // $this->imagenService->crearImagen($validate);
+
     public function create()
     {
         //

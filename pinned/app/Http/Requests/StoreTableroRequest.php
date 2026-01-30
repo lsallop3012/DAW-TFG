@@ -11,6 +11,9 @@ class StoreTableroRequest extends FormRequest
      */
     public function authorize(): bool
     {
+        if ($this->user()->id === $this->Tablero->user_id || $this->user()->isAdmmin()){
+            return true;
+        }
         return false;
     }
 
